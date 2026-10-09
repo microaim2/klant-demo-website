@@ -26,11 +26,21 @@ address { font-style: normal; }
 footer { padding-block: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
 .skip-link { position: absolute; left: 12px; top: -100px; padding: 12px; background: white; }
 .skip-link:focus { top: 12px; }
+.button { display: inline-block; background: var(--ink); color: white; padding: 14px 24px; border-radius: 2px; text-decoration: none; font-size: 15px; }
+.button:hover { background: #35583f; }
+.button span { margin-left: 18px; }
+.intro-panel { background: var(--ink); color: var(--paper); padding: 36px; border: 0; }
+.eyebrow, .number { font: 12px/1.5 Arial, sans-serif; letter-spacing: 2px; text-transform: uppercase; }
+.eyebrow { color: var(--accent); }
+.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.number { color: var(--muted); }
+.services p { font-size: 16px; }
 @media (max-width: 650px) {
   header { align-items: flex-start; flex-direction: column; gap: 18px; }
   nav { gap: 24px; }
   main { padding-block: 40px 54px; }
   h1 { letter-spacing: -1px; }
   h2 { font-size: 28px; }
-  .steps, .contact-grid { grid-template-columns: 1fr; gap: 12px; }
+  .steps, .contact-grid, .services { grid-template-columns: 1fr; gap: 12px; }
+  .intro-panel { padding: 24px; }
 }
